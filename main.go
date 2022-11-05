@@ -9,19 +9,19 @@ import (
 )
 
 func main() {
-    fmt.Println(foo.Bar())
-    fmt.Println(quote.Go())
+	fmt.Println(foo.Bar())
+	fmt.Println(quote.Go())
 
-		var dir, file string
+	var dir, file string
 
-		dir, file = path.Split("~/.local")
+	dir, file = path.Split("~/.local")
 
-		fmt.Println("dir:", dir)
-		fmt.Println("file:", file)
+	fmt.Println("dir:", dir)
+	fmt.Println("file:", file)
 
-		var f string
-		_, f = path.Split("~/.local/")
-		fmt.Println("file-f:", f)
-		_, f = path.Split("~/.local")
-		fmt.Println("file-f:", f)
+	var f string
+	_, f = path.Split("~/.local/")
+	fmt.Println("file-f:", f)
+	_, f = path.Split("~/.local")
+	fmt.Println("file-f:", f)
 }

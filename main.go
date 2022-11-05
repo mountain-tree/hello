@@ -24,6 +24,6 @@ func main() {
 	fmt.Println("file-f:", f)
 	_, f = path.Split("~/.local")
 	fmt.Println("file-f:", f)
-  _, f2 := path.Split("/tmp")
+	_, f2 := path.Split("/tmp")
 	fmt.Println("file-f:", f2)
 }
